@@ -1,0 +1,29 @@
+apiVersion: v2
+appVersion: 8.5.1
+dependencies:
+- condition: postgresql.enabled
+  name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - postgres
+  version: 12.x.x
+description: Wiki collaboration platform
+home: https://confluence.atlassian.com/doc/confluence-server-documentation-135922.html
+icon: https://mox.sh/assets/images/confluence-logo.png
+keywords:
+- wiki
+- confluence
+- confluence-server
+- atlassian
+- documentation
+- application
+maintainers:
+- email: jmox@pm.me
+  name: jmox
+name: confluence-server
+sources:
+- https://helm.sh
+- https://helm.mox.sh
+- https://hub.docker.com/r/atlassian/confluence-server
+type: application
+version: 3.7.1
